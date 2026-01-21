@@ -10,9 +10,12 @@ export default {
       type: "array",
       items: {
         type: "object",
-        required: ["code", "value"],
+        required: ["fatherCode", "code", "type", "value"],
         properties: {
-          applCode: { type: "string" },
+          fatherCode: { type: "string" },
+          code: { type: "string" },
+          name: { type: "string" },
+          type: { type: "string" },
           value: { type: "string" }
         }
       }

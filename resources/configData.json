@@ -1,11 +1,21 @@
 {
   "configs": [
     {
-      "code" : "params>folderAGID",
-      "value": "124"
+      "fatherCode": "params",
+      "code": "mycalendar",
+      "type": "group",
+      "value": "MyCalendar"
+    },
+    {
+      "fatherCode": "params>mycalendar",
+      "code": "dummyIdentifier",
+      "name": "Dummy Identifier",
+      "type": "param",
+      "value": "MYGSPN80A01L736B"
     }
   ],
-  "tenants" : [
-    "C_DEMO_PNRR"
+  "tenants": [
+    "C_DEMO_PNRR",
+    "C_GA"
   ]
 }
