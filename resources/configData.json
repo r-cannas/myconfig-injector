@@ -1,0 +1,11 @@
+{
+  "configs": [
+    {
+      "code" : "params>folderAGID",
+      "value": "124"
+    }
+  ],
+  "tenants" : [
+    "C_DEMO_PNRR"
+  ]
+}

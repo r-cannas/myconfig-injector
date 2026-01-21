@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# Lock file (se vuoi ignorarlo)
+package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env.*.local

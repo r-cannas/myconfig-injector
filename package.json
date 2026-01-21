@@ -1,0 +1,26 @@
+{
+  "name": "myprofile-registrator",
+  "version": "1.0.0",
+  "main": "getAuthToken.js",
+  "scripts": {
+    "start": "node initializeProfile.js",
+    "start:dev": "dotenv -e .env.development -- node initializeProfile.js",
+    "start:prod": "dotenv -e .env.production -- node initializeProfile.js",
+    "start-create-group": "node createGroupOnTenants.js",
+    "start-create-group:dev": "dotenv -e .env.development -- node createGroupOnTenants.js",
+    "start-create-group:prod": "dotenv -e .env.production -- node createGroupOnTenants.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "axios": "^1.6.8",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0"
+  }
+}
