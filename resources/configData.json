@@ -1,10 +1,11 @@
 {
   "configs": [
     {
-      "fatherCode": "params",
-      "code": "mycalendar",
-      "type": "group",
-      "value": "MyCalendar"
+      "fatherCode": "",
+      "code": "params",
+      "type": "params",
+      "name": "Parametri",
+      "value": "Parametri del Comune"
     },
     {
       "fatherCode": "params>mycalendar",
@@ -15,7 +16,6 @@
     }
   ],
   "tenants": [
-    "C_DEMO_PNRR",
     "C_GA"
   ]
 }

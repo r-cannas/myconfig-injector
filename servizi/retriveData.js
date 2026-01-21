@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-const maxElementsPerPage = 100; // Numero massimo di elementi per pagina nelle chiamate paginabili
-
 /**
  * Esegue una richiesta GET autenticata e restituisce il body della risposta.
  * Gestisce anche casi di risposta vuota.
@@ -42,7 +40,8 @@ async function getData(url, authAccount) {
  * Recupera un tenant tramite il suo codice.
  */
 export async function getItem(baseUrl, authAccount, tenantCode, code, withDefault) {
-  const safeConfigCode = encodeURIComponent(tenantCode+'>'+code);
+  const configCode = code ? `${tenantCode}>${code}` : tenantCode;
+  const safeConfigCode = encodeURIComponent(configCode);
   const safeWithDefault = encodeURIComponent(withDefault);
   const url = `${baseUrl}/getItem?code=${safeConfigCode}&withDefault=${safeWithDefault}`;
   return getData(url, authAccount);

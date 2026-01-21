@@ -65,7 +65,7 @@ async function getFatherNodeId(baseUrl, authAccount, tenantCode, fatherCode) {
 
 
 async function insertNewNodeOrSkipIfCodeAlreadyExists(baseUrl, authAccount, tenantCode, fatherNodeId, config) {
-  const newCode = `${config.fatherCode}>${config.code}`;
+  const newCode = config.fatherCode ? `${config.fatherCode}>${config.code}`: config.code;
   const existingItem = await getItem(baseUrl, authAccount, tenantCode, newCode, false);
   // if item doesn't exists I create new one
   if (existingItem) {
