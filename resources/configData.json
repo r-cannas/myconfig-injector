@@ -8,14 +8,20 @@
       "value": "Parametri del Comune"
     },
     {
+      "fatherCode": "params",
+      "code": "mycalendar",
+      "type": "group",
+      "value": "MyCalendar"
+    },
+    {
       "fatherCode": "params>mycalendar",
       "code": "dummyIdentifier",
       "name": "Dummy Identifier",
       "type": "param",
-      "value": "MYGSPN80A01L736B"
+      "value": "MYGUNA80A01L736N"
     }
   ],
   "tenants": [
-    "C_GA"
+    "C_DEMO_PNRR"
   ]
 }
